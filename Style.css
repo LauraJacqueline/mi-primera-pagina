@@ -1,0 +1,212 @@
+body { 
+    font-family: Arial, sans-serif;              /* Fuente principal */
+    background-color: #f4f4f9;                   /* Color de fondo suave */
+    display: flex;                               /* Flexbox para centrar contenido */
+    justify-content: center;                     /* Centrado horizontal */
+    align-items: center;                         /* Centrado vertical */
+    height: 100vh;                               /* Altura del viewport */
+    margin: 0;                                   /* Elimina margen por defecto */
+}
+
+.container,
+.container2 {
+    background-color: white;                     /* Fondo blanco */
+    width: 80%;                                  /* Ancho relativo */
+    max-width: 900px;                            /* Ancho máximo */
+    border-radius: 10px;                         /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);     /* Sombra suave */
+    padding: 30px;                               /* Espaciado interior */
+    text-align: center;                          /* Centra texto */
+    margin: auto;                                /* Centrado automático */
+}
+
+.portada .container {
+    text-align: center;                          /* Centra texto */
+}
+
+.portada h4,
+.portada p {
+    font-size: 1.2em;                            /* Texto más grande */
+    color: #34495e;                              /* Color gris oscuro */
+}
+
+.portada i {
+    font-style: italic;                          /* Texto en cursiva */
+    color: #7f8c8d;                              /* Gris claro */
+}
+
+.portada img {
+    margin: 20px 0;                              /* Espaciado vertical */
+    border-radius: 10px;                         /* Bordes redondeados */
+    display: block;                              /* Imagen como bloque */
+    margin-left: auto;                           /* Centrado horizontal */
+    margin-right: auto;                          /* Centrado horizontal */
+}
+
+.portada .boton,
+.boton {
+    background-color: #2980b9;                   /* Fondo azul */
+    color: white;                                /* Texto blanco */
+    padding: 10px 20px;                          /* Espaciado interno */
+    font-size: 1.2em;                            /* Tamaño del texto */
+    border-radius: 5px;                          /* Bordes redondeados */
+    text-decoration: none;                       /* Sin subrayado */
+    transition: background-color 0.3s ease;      /* Efecto de transición */
+    display: inline-block;                       /* Elemento en línea */
+    margin: 10px auto;                           /* Espaciado vertical */
+    text-align: center;                          /* Centrado de texto */
+}
+
+.portada .boton:hover,
+.boton:hover {
+    background-color: #3498db;                   /* Azul más claro en hover */
+}
+
+h1 {
+    font-size: 2em;                              /* Título principal */
+    color: #2c3e50;                              /* Gris oscuro */
+    margin-bottom: 20px;                         /* Espaciado inferior */
+    text-align: center;                          /* Centrado */
+}
+
+h2 {
+    font-size: 1.5em;                            /* Subtítulo */
+    color: #2980b9;                              /* Azul */
+    margin-top: 20px;                            /* Espacio superior */
+}
+
+p,
+ol {
+    font-size: 1.2em;                            /* Texto más grande */
+    color: #34495e;                              /* Color gris oscuro */
+    margin-bottom: 20px;                         /* Espacio inferior */
+}
+
+ol {
+    margin-left: 40px;                           /* Sangría izquierda */
+    text-align: left;                            /* Alineación del texto */
+}
+
+.imagen {
+    width: 100%;                                 /* Ancho completo */
+    max-width: 300px;                            /* Máximo ancho */
+    height: auto;                                /* Escalado proporcional */
+    display: block;                              /* Imagen como bloque */
+    margin: 20px auto;                           /* Centrado vertical y horizontal */
+    border-radius: 10px;                         /* Bordes redondeados */
+}
+
+table {
+    width: 100%;                                 /* Ancho completo */
+    border-collapse: collapse;                   /* Quita separación entre bordes */
+    margin-top: 20px;                            /* Espacio superior */
+}
+
+table,
+th,
+td {
+    border: 1px solid #bdc3c7;                   /* Borde gris claro */
+}
+
+th,
+td {
+    padding: 12px;                               /* Espaciado interno */
+    text-align: center;                          /* Centrado de texto */
+    font-size: 1.1em;                            /* Tamaño de texto */
+}
+
+th {
+    background-color: #2980b9;                   /* Azul */
+    color: white;                                /* Texto blanco */
+}
+
+td {
+    background-color: #ecf0f1;                   /* Gris claro */
+}
+
+.calculator {
+    background-color: white;                     /* Fondo blanco */
+    border-radius: 10px;                         /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);     /* Sombra */
+    padding: 20px;                               /* Espaciado interno */
+    width: 280px;                                /* Ancho fijo */
+    display: flex;                               /* Flexbox */
+    flex-direction: column;                      /* Columnas */
+    align-items: center;                         /* Centrado horizontal */
+    margin: auto;                                /* Centrado automático */
+}
+
+.display {
+    background-color: #333;                      /* Fondo oscuro */
+    color: white;                                /* Texto blanco */
+    width: 100%;                                 /* Ancho completo */
+    height: 50px;                                /* Alto fijo */
+    font-size: 2em;                              /* Tamaño grande */
+    text-align: right;                           /* Alineado a la derecha */
+    line-height: 50px;                           /* Centrado vertical */
+    border-radius: 5px;                          /* Bordes redondeados */
+    padding: 0 10px;                             /* Espaciado interno horizontal */
+    margin-bottom: 20px;                         /* Espacio inferior */
+}
+
+.button-row {
+    width: 100%;                                 /* Ancho completo */
+    display: flex;                               /* Flexbox */
+    justify-content: space-between;              /* Espaciado uniforme */
+    margin-bottom: 10px;                         /* Espacio inferior */
+}
+
+.button {
+    width: 60px;                                 /* Ancho fijo */
+    height: 60px;                                /* Alto fijo */
+    font-size: 1.5em;                            /* Tamaño grande */
+    background-color: #ecf0f1;                   /* Gris claro */
+    border: none;                                /* Sin borde */
+    border-radius: 5px;                          /* Bordes redondeados */
+    cursor: pointer;                             /* Cursor tipo mano */
+    transition: background-color 0.3s ease;      /* Efecto transición */
+}
+
+
+.button:hover {
+    background-color: #bdc3c7;                   /* Cambio de color al pasar el cursor */
+}
+
+.button-operator {
+    background-color: #3498db;                   /* Azul claro */
+    color: white;                                /* Texto blanco */
+}
+
+.button-operator:hover {
+    background-color: #2980b9;                   /* Azul más oscuro */
+}
+
+.button-equal {
+    background-color: #2ecc71;                   /* Verde */
+    color: white;                                /* Texto blanco */
+}
+
+.button-equal:hover {
+    background-color: #27ae60;                   /* Verde oscuro */
+}
+
+.nav-buttons {
+    margin-top: 20px;                            /* Espacio superior */
+    text-align: center;                          /* Centrado */
+}
+
+.nav-button {
+    background-color: #f39c12;                   /* Naranja */
+    color: white;                                /* Texto blanco */
+    padding: 10px 20px;                          /* Espaciado */
+    font-size: 1.2em;                            /* Tamaño grande */
+    border: none;                                /* Sin borde */
+    border-radius: 5px;                          /* Bordes redondeados */
+    cursor: pointer;                             /* Cursor tipo mano */
+    transition: background-color 0.3s ease;      /* Efecto de transición */
+    margin: 5px;                                  /* Separación entre botones */
+}
+
+.nav-button:hover {
+    background-color: #e67e22;                   /* Naranja oscuro */
+}
